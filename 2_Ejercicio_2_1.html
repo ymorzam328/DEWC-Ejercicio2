@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //PENDIENTE CORREGIR
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(()=>{
+        document.getElementById('h').innerText+="¡Bienvenid@!";
+            
+        }, 3000)
+        //esto sirve para escribir algo después de unos segundos 3000 minisegundos que son 3 segundos
+        setTimeout(() => {
+            document.getElementById('h').innerHTML="";
+        }, 6000); //ERROR A CORREGIR NO DESAPARECE SE DUPLICA LA ETIQUETA
+
+    });
+
+    </script>
+</head>
+<body>
+
+    <h1 id="h"></h1>
+
+</body>
+</html>
